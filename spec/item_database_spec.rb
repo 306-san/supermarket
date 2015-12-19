@@ -8,7 +8,7 @@ RSpec.describe ItemDatabase do
     db.add(apple)
     db.add(banana)
 
-    #expect(db.find("Apple")).to eq(apple)
+    expect(db.find("Apple")).to eq(apple)
     expect(db.find("Banana")).to eq(banana)
 
   end
