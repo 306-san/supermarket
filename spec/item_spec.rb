@@ -1,12 +1,7 @@
 require 'Item.rb'
 
 RSpec.describe(Item) do
-  subject do
-    item=Item.new
-    item.name= "banana"
-    item.price= 100
-    item
-  end
+  subject {Item.new("banana",100)}
   describe '#name' do
     # context 'name not params' do
     #   it {expect(subject.name).to eq(nil)}
